@@ -1,0 +1,128 @@
+/**
+ * App component
+ */
+#app{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding-top: 50px;
+}
+ .app {
+    --thickness: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: calc(100% - 8vmin);
+    height: calc(100vh - 8vmin);
+   
+    padding-bottom: 20px;
+    overflow: hidden;
+    perspective: 1500px;
+}
+.media-container{
+    width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.app[data-current-media="book"] .book-wrapper {
+    display: block;
+}
+.app[data-current-media="book"] .book-wrapper {
+    display: block;
+}
+
+
+
+
+/**
+ * Wrapper component
+ */
+.media-container:hover .book {
+    transform: rotateX(5deg) rotateY(-50deg);
+}
+
+.media-container:hover .book-shadow {
+    transform: rotateX(90deg) rotateZ(40deg);
+}
+
+
+
+/**
+ * Wrapper component
+ */
+
+.book-wrapper {
+    display: none;
+}
+
+
+/**
+ * Book component
+ */
+
+.book {
+    position: relative;
+    z-index: 1;
+    width: 290px;
+    transform-style: preserve-3d;
+    transition: transform 1s ease;
+    transform: rotateX(0deg) rotateY(-30deg);
+}
+
+.book__front {
+    border-radius: 5px;
+    overflow: hidden;
+    transform: translateZ(calc(var(--thickness)));
+}
+
+.book__front img{
+    width: 100%;
+}
+
+.book__back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: #356143;
+    border-radius: 5px;
+    overflow: hidden;
+    transform: translateZ(calc(-1.1 * var(--thickness)));
+}
+
+.book__paper {
+    height: 98%;
+    width: calc(var(--thickness) * 2);
+    background: white;
+    position: absolute;
+    top: 1%;
+    right: 0;
+    background:
+        linear-gradient(90deg, rgba(0, 0, 0, 0.3), rgba(255, 255, 257, 0)),
+        repeating-linear-gradient(90deg, white, #e2e2e2 1px, white 3px, #9a9a9a 1px);
+    transform: rotateY(90deg) translateX(calc(var(--thickness) / 7)) translateZ(calc(var(--thickness) / 1.2));
+}
+
+.book-shadow {
+    position: absolute;
+    width: 290px;
+    height: calc(100px + var(--thickness));
+    background: radial-gradient(70% 85%, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100%);
+    transform: rotateX(90deg) rotateZ(30deg);
+    transition: transform 1s ease;
+    filter: blur(16px);
+}
+.over {
+    text-decoration: line-through;
+    color: red;
+    font-family: 'Montserrat', sans-serif;
+}
+.Matt {
+    margin-top:0;
+    font-family: 'Montserrat', sans-serif;
+}
+.discount {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}

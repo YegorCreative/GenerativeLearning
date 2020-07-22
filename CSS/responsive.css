@@ -1,0 +1,580 @@
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+   background: rgb(6,79,79);
+background: linear-gradient(90deg, rgba(6,79,79,1) 0%, rgba(74,181,181,1) 100%);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: pink;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  .menuClose{
+      position: absolute;
+      display: none;
+      top: 10px;
+      right: 10px;
+      color: #064f4f;
+      
+  }
+
+  /*home page responsive */
+  /*responsive for 1619px*/
+  @media screen and (max-width: 1619px){
+    .carde,.carde-services {
+      width: 350px;
+      height: 420px;
+  }
+  .st0,.st0-services{
+    width: 350px;
+  }
+  .one,.one-services {
+    top: 230px;}
+.two, .two-services {
+    top: 300px;
+    width: 350px;
+    text-align: center;
+}
+
+  }
+  /*responsive for 1319px*/
+  @media screen and (max-width: 1319px){
+    .card1 {
+      width: 460px;
+    }
+   
+  }
+
+  /*responsive for 1263px*/
+  @media screen and (max-width: 1263px){
+    #testimonies div{
+      width: 60%;
+      height: 350px;
+    }
+    .carde,.carde-services  {
+      width: 300px;
+      height: 420px;
+  }
+  #services-banner h3 {
+    font-size: 80px;
+  }
+  #books-banner h3{
+    font-size: 80px;
+  }
+  .st0,.st0-services{
+    width: 300px;
+  }
+  .one,.one-services {
+    top: 210px;}
+    .two {
+  width:300px ;
+    top: 280px;
+}
+.two-services{
+  width:300px ;
+  top: 280px;
+}
+.card1 {
+  width: 450px;
+  height: 420px;
+}
+  }
+  /*screen max-width 1024*/
+  @media screen and (max-width: 1024px){
+      .menuClose{
+          display: block;
+      }
+      #main-header {
+          display: none;
+      }
+      #logo2{
+        opacity: 1;
+        margin-top: 15px;
+        margin-left: 35px;
+        position: relative;
+        height: 70px;
+      }
+      #second-two-block{
+        width: 100%;
+        height: auto;
+      }
+      .imgB img{
+        width: 350px;
+        height: 350px;
+      }
+      
+      #second-banner{
+        height: 400px;
+        align-items: center;
+        justify-content: center;
+        top: 5px;
+        background-attachment: scroll;
+      }
+      #about-banner{
+        height: 400px;
+        background-image: url('../Assets/photo1-1024px.png');
+        background-attachment: scroll;
+      }
+      
+      .video-container {
+        background-image: url('../Assets/green-leaves-1024.png');
+        background-attachment: scroll;
+      }
+      #second-banner h3{
+        font-size: 80px;
+      }
+      #services-banner{
+        height: 400px;
+        background-image: url('../Assets/services2-1024.png');
+        background-attachment: scroll;
+      }
+      #books-banner {
+        height: 400px;
+        background-image: url('../Assets/books-1024.png');
+        background-attachment: scroll;
+      }
+      #contact-banner {
+        background-attachment: scroll;
+        margin-top: 0;
+        height: 600px;
+      }
+    .media-container {
+      flex-wrap: wrap;
+    }
+    #app {
+      height:800px;
+    }
+    #fourth-banner {
+     height: 400px;
+    }
+    #logoF {
+      width: 200px;
+      height: auto;
+    }
+    .threePigs {
+      flex-wrap: wrap;
+    }
+    .pig1 {
+      width: 50%;
+    }
+    .pig2 {
+      width:100%;
+    }
+    #logo{
+      width: 340px;
+      height: auto;
+    padding-bottom: 40px ;
+     }
+  }
+    @media screen and (max-width: 1020px){
+      #app {
+        height: auto;
+        padding-top: 50px;
+      }
+      #second-two-block {
+        height: auto;
+        flex-wrap: wrap-reverse;
+      }
+      
+      #second-two-block1{
+        width: 100%;
+        flex-wrap: wrap;
+      }
+      .two-blocks-about,.imgB2{
+        width: 100%;
+        height: auto;
+      }
+      .two-blocks-about {
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+    }
+    /*screen max-width 940*/
+    @media screen and (max-width: 940px) {
+      .two-blocks-info p {
+        padding: 0 20px;
+      }
+      #second-two-block {
+        height: auto;
+        flex-wrap: wrap-reverse;
+      }
+      .two-blocks-info, .imgB{
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .imgB img{
+        margin-top: 30px;
+        width: 300px;
+        height: 300px;
+      }
+      #about-banner h3{
+        font-size: 80px;
+      }
+    .card1 {
+      width: 310px;
+      height: 500px;
+    }
+    #testimonies div{
+      width: 80%;
+      height: 420px;
+    }
+    }
+    /*screen max-width 905*/
+    @media screen and (max-width: 905px){
+      #top-head  {
+        flex-wrap: wrap;
+      }
+      #top-head div {
+        display: flex;
+        width: 50%;
+        justify-content: center;
+      }
+      #second-banner h3{
+        font-size: 60px;
+      }
+      #slider .slick-track {
+        height: 360px;
+        padding-top: 10px;
+        padding-bottom: 10px; 
+    }
+    .video-container{
+      height: auto;
+      flex-wrap: wrap;
+    }
+    .left-float, .right-float {
+      width: 100% ;
+    }
+    #second-banner h4 {
+      font-size: 2rem;
+    }
+    #about-banner h3 {
+      font-size: 60px;
+    }
+    #services-banner h3{
+      font-size: 60px;
+    }
+    #books-banner h3 {
+      font-size: 60px;
+    }
+    #contact-banner h3 {
+      font-size: 60px;
+    }
+    #contact-banner {
+      margin-top: 0;
+      background-size: cover;
+    }
+    }
+    /*screen max-width 830*/
+    @media screen and (max-width:830px){
+      #two-blocks {
+        flex-direction: column-reverse;
+        height: auto;
+      }
+      .twoPigs {
+        flex-wrap: wrap;
+      }
+      .leftPig, .rightPig {
+        width: 100%;
+        font-size: 20px;
+      }
+      .rightPig{
+        height: auto;
+      }
+      
+    }
+     /*screen max-width 768*/
+  @media screen and (max-width: 768px) {
+    #second-banner  {
+      background-attachment: scroll;
+      background-image: url('../Assets/banner1-768px.png');
+    }
+    #about-banner  {
+      background-attachment: scroll;
+      background-image: url('../Assets/photo1-768px.png');
+    }
+    .video-container {
+      background-image: url('../Assets/green-leaves-768.png');
+    }
+    #services-banner {
+      background-attachment: scroll;
+      background-image: url('../Assets/services2-768.png');
+    }
+    #books-banner  {
+      background-attachment: scroll;
+      background-image: url('../Assets/books-768.png');
+    }
+    #contact-banner  {
+      background-attachment: scroll;
+    }
+    #testimonies div{
+      width: 100%;
+      height: auto;
+    }
+    .quotes {
+      top: -55px;
+    width: 100px;
+    height: 100px;
+    }
+    .certifications {
+      padding: 10px;
+      margin-left: 10px;
+      font-size: 28px;
+      text-align: center;
+  }
+  .blocks-left {
+    font-size: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+    filter:drop-shadow(2px 2px 4px rgb(180, 180, 180));
+  }
+  }
+     /*screen max-width 618*/
+     @media screen and (max-width: 618px){
+      #second-banner h4 {
+        font-size: 30px;
+      }
+      #second-banner h3 {
+        font-size: 45px;
+      }
+      #about-banner h3 {
+        font-size: 45px;
+      }
+      #services-banner h3{
+        font-size: 45px;
+      }
+      #books-banner h3 {
+        font-size: 45px;
+      }
+      #contact-banner h2 {
+        font-size: 45px;
+      }
+      #second-two-block h3 {
+        font-size: 25px;
+      }
+      #third-block{
+        height: auto;
+        width: 410px;
+      }
+      .something {
+        font-size: 18px;
+      }
+     #logo {
+       width: 250px;
+       height: 100%;
+       padding-top:  10px;
+       padding-bottom: 40px ;
+     }
+     #main-footer{
+       flex-wrap: wrap;
+     }
+     #logoF {
+      width: 280px;
+      height: auto;
+    }
+    .phoneN {
+      width: 320px;
+    }
+    .socialM{
+      width: 320px;
+      padding-left: 20px;
+    }
+    #testimonies div{
+      width: 100%;
+      height: 460px;
+    }
+    #second-banner  {
+      height: 320px;
+    }
+    #about-banner {
+      height: 320px;
+    }
+    #services-banner{
+      height: 320px;
+    }
+    #books-banner  {
+      height: 320px;
+    }
+    #books h2 {
+      font-size: 32px;
+      padding-bottom: 5px;
+    }
+    #app {
+      padding-top: 30px;
+    }
+   .app{
+    justify-content: center;
+    align-content: center;
+    width: 100vw;
+    height: 100vh;
+   }
+    .card1 {
+      width: 315px;
+      height: auto;
+    }
+    .partner img {
+      width: 150px;
+  }
+  .pig1 {
+    width: 100%;
+  }
+     }
+      /*screen max-width 455*/
+  @media screen and (max-width: 455px){
+    #logo {
+      width: 210px;
+      height: 100%;
+      padding-top:  10px;
+      padding-bottom: 40px ;
+    }
+    #second-banner  {
+      height: 300px;
+      background-image: url('../Assets/banner1-455px.png');
+    }
+    #about-banner {
+      height: 300px;
+      background-image: url('../Assets/photo1-455px.png');
+    }
+    .video-container {
+      background-image: url('../Assets/green-leaves-768.png');
+    }
+    #services-banner{
+      height: 300px;
+      background-image: url('../Assets/services2-455.png');
+    }
+    #books-banner  {
+      height: 300px;
+      background-image: url('../Assets/books-455.png');
+    }
+    #second-banner h4 {
+      font-size: 23px;
+    }
+    #second-banner h3 {
+      font-size: 30px;
+    }
+    #flex-container h2 {
+      font-size: 25px; 
+    }
+    #partners h2{
+      font-size: 25px; 
+    }
+    #third-block{
+      width: 280px;
+    }
+    .aboutImage1{
+      width: 280px;
+    }
+    .certifications {
+      padding: 10px;
+      margin-left: 10px;
+      font-size: 22px;
+      text-align: center;
+  }
+    .imgB img{
+      width: 230px;
+      height: 230px;
+    }
+    #about-banner h3 {
+      font-size: 28px;
+    }
+    .video-container h2{
+      margin-left: 0;
+    }
+    .left-float, .right-float {
+      font-size: 18px;
+      padding-left: 10px;
+    padding-right: 10px;
+    }
+    .carde {
+      filter:drop-shadow(2px 2px 4px rgb(40, 65, 40));
+    }
+    .book-shadow{
+      width: 250px;
+    }
+    .two-blocks-about p {
+      padding: 0 10px;
+    
+  }
+    .video-container h2{
+      font-size: 28px;
+    }
+    #services-banner h3{
+      font-size: 28px;
+    }
+    #books-banner h3 {
+      font-size: 28px;
+    }
+    #contact-banner h2 {
+      font-size: 28px;
+    }
+    #books h2 {
+      font-size: 28px;
+      padding-bottom: 5px;
+      margin-left: 10px;
+      text-align: center;
+    }
+    #testimonies div {
+      padding-left: 15px;
+      padding-right: 15px;
+      margin: 10px;
+      height: auto;
+      padding-top: 15px;
+    }
+    .quotes {
+      top: -35px;
+    }
+    #fourth-banner {
+      height: 320px;
+     }
+     .contact-buttons a {
+       font-size: 18px;
+       font-weight: 300;
+       margin-left: 1px;
+       margin-right: 5px;
+     }
+     #contact-banner h3 {
+      font-size: 40px;
+    }
+  }
+    /*screen max-width 450*/
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+   
+  }
+ 
+  
