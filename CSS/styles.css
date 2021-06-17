@@ -8,6 +8,7 @@ body {
     background-color: white;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Staatliches', cursive;
+    font-size: 16px;
 }
 
 *, *::before, *::after {
@@ -120,13 +121,14 @@ body {
 /**/
 #second-two-block{
     position: relative;
-    height: 550px;
+    height: 350px;
     width: 100%;
     display: flex;
     flex-direction: wrap row;
     align-items: center;
     justify-content:center;
     font-family: 'Montserrat', sans-serif;  
+    background-color: #004F4F;
 }
 x   
 #two-blocks {
@@ -138,7 +140,7 @@ x
     box-sizing: border-box;
     text-align: center;
     width: 50%;
-    height: 550px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -150,19 +152,20 @@ x
 .two-blocks-info h3 {
     margin-top: 0;
     margin-bottom: 0;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3rem;
-    color: black;
+    font-family: 'Staatliches', cursive;
+    font-size: 35px;
+    color:white;
     padding-bottom: 10px;
 }
 
 .two-blocks-info p {
-    margin: 0.7em;
-    padding: 0 50px;
+    margin: 10px;
+    padding: 0 10px;
     font-size: 20px;
-    color: black;
-    padding-bottom: 30px;
+    color:white;
+    padding-bottom: 10px;
     font-family: 'Montserrat', sans-serif;  
+    text-align: left;
 }
 
 .two-blocks-info a {
@@ -193,15 +196,15 @@ x
 
 .imgB img {
     box-sizing: border-box;
-    border: #d4d857 15px solid;
+    
     margin-left: auto;
     margin-right: auto;
-    width: 450px;
-    height: 450px;
+    width: 560px;
+    height: 560px;
     align-items: center;
     object-fit: cover;
-    border-radius: 50%;
-    box-shadow: 0px 10px 17px -1px #064f4f, 5px 5px 15px 5px rgba(125,34,255,0);
+    margin-top: -200px;
+  
 }
 
 #second-banner {
@@ -280,28 +283,83 @@ x
 /* grow with , part for new services design */
 .growYour{
     width: 100%;
-    height: 1500px;
     box-sizing: border-box;
-    background-color: yellow;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    position: relative;
+    margin-top: -160px;
+    padding-bottom: 170px;
 }
 .growLeft, .growRight{
     width: 640px;
-    height: 1400px;
+    box-sizing: border-box;   
+}
+.blanky {
+    width: 640px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    line-height: 10px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    background-color: #F4F4F4;
     box-sizing: border-box;
-    margin: 20px;
+}
+.blanky1{
+    width: 640px;
+    height: 320px;
+    box-sizing: border-box;
+    padding: 45px;
+}
+.blanky1 img{
+    width: 100%;
 }
 .growLeft{
-    background-color: #08b6b6;
+    position: inherit;
 }
-.growRight {
-    background-color: #969c07;
+.growSmallLeft:hover, .growSmallRight:hover{
+    transform: scale(1.005);
+    transition: 1s;
+    z-index: 10;
 }
 .growSmallLeft , .growSmallRight{
-    width: 290px;
-    height: 290px;
+    width: 640px;
+    box-sizing: border-box;
+    display: flex;
+    
+}
+.growOne, .growTwo{
+    width: 320px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    margin-top: 0;
+    background-color: #F4F4F4;
+    text-align:left;
+}
+.growTwo img {
+    margin: 0;
+}
+.growOne h3{
+    font-size: 20px;
+    padding-left: 35px;
+}
+.growOne h1{
+    padding-left: 35px;
+}
+
+.growColor {
+   width: 320px;
+   height: 320px;
+   background-color: #064f4f;
+   opacity: .2;
+   position: absolute;
 }
 
 /* flex container */
@@ -779,7 +837,7 @@ x
     z-index: 1;
 }
 
-/*services contanier*/
+/*services contanier
 #comtanier-six {
     width: 100%;
     height: 100%;
@@ -856,7 +914,7 @@ x
     padding: 10px;
     margin-left: 50px;
     font-size: 38px;
-}
+}*/
 /**
 
 /* trying new flex containe */
