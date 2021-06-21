@@ -347,11 +347,14 @@ x
     margin: 0;
 }
 .growOne h3{
-    font-size: 20px;
+    font-size: 16px;
     padding-left: 35px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
 }
 .growOne h1{
-    padding-left: 35px;
+    padding-left: 30px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .growColor {
