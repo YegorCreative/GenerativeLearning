@@ -5,7 +5,6 @@
     width: 100%;
     height: 100%;
     display: flex;
-    padding-top: 50px;
 }
  .app {
     --thickness: 15px;
@@ -14,8 +13,7 @@
     justify-content: space-around;
     width: calc(100% - 8vmin);
     height: calc(100vh - 8vmin);
-   
-    padding-bottom: 20px;
+    padding-bottom: 70px;
     overflow: hidden;
     perspective: 1500px;
 }
@@ -28,23 +26,10 @@
 .app[data-current-media="book"] .book-wrapper {
     display: block;
 }
-.app[data-current-media="book"] .book-wrapper {
-    display: block;
-}
 
 
 
 
-/**
- * Wrapper component
- */
-.media-container:hover .book {
-    transform: rotateX(5deg) rotateY(-50deg);
-}
-
-.media-container:hover .book-shadow {
-    transform: rotateX(90deg) rotateZ(40deg);
-}
 
 
 
@@ -54,6 +39,12 @@
 
 .book-wrapper {
     display: none;
+    box-sizing: border-box;
+    padding: 25px;
+}
+.book-wrapper:hover{
+    background-color: #004F4F;
+    color: white;
 }
 
 
@@ -64,7 +55,7 @@
 .book {
     position: relative;
     z-index: 1;
-    width: 290px;
+    width: 270px;
     transform-style: preserve-3d;
     transition: transform 1s ease;
     transform: rotateX(0deg) rotateY(-30deg);
@@ -77,12 +68,13 @@
 }
 
 .book__front img{
-    width: 100%;
+    width: 270px;
+    border: 5px solid #356143;
 }
 
 .book__back {
-    width: 100%;
-    height: 100%;
+    width: 270px;
+    height: 99%;
     position: absolute;
     top: 0;
     background: #356143;
@@ -92,11 +84,11 @@
 }
 
 .book__paper {
-    height: 98%;
+    height: 96%;
     width: calc(var(--thickness) * 2);
     background: white;
     position: absolute;
-    top: 1%;
+    top: 2%;
     right: 0;
     background:
         linear-gradient(90deg, rgba(0, 0, 0, 0.3), rgba(255, 255, 257, 0)),
@@ -104,15 +96,7 @@
     transform: rotateY(90deg) translateX(calc(var(--thickness) / 7)) translateZ(calc(var(--thickness) / 1.2));
 }
 
-.book-shadow {
-    position: absolute;
-    width: 290px;
-    height: calc(100px + var(--thickness));
-    background: radial-gradient(70% 85%, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100%);
-    transform: rotateX(90deg) rotateZ(30deg);
-    transition: transform 1s ease;
-    filter: blur(16px);
-}
+
 .over {
     text-decoration: line-through;
     color: red;
@@ -126,3 +110,4 @@
     text-align: center;
     font-family: 'Montserrat', sans-serif;
 }
+
