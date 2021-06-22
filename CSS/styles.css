@@ -220,18 +220,10 @@ x
     background-repeat: no-repeat;
     position: relative;
     z-index: 0;
+    
 }
 
-.color11{
-    left: 0;
-    right: 0;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    opacity: 0.4;
-    z-index: 1;
-}
+
 
 #second-banner h1 {
     font-weight: 400;
@@ -442,68 +434,7 @@ x
 }
 
 /*testimonies*/
-#testimonies {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-   width: 100%;
-   position: relative;
-   box-sizing: border-box;
-   height: auto; 
-   padding-top: 40px;
-   padding-bottom: 40px;
-   background-color: white;
-  
-}
-.zoom {
-     background-color: #004F4F;
-}
-   
-.lightGreen {
-    background-color:none;
-    color: white;
-    width: 30%;
-   
-}
-.darkGreen{
-    background-color: none;
-    color: white;
-    width: 30%;
-}
-#testimonies div {
-    margin: 40px;
-    position: relative;
-    box-sizing: border-box;
-    border: dotted 5px #064f4f;
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    flex-direction: column;
-    padding-left: 15px;
-    padding-right: 15px;
-    text-align: center;
-    width: 320px;
-    padding-bottom: 20px;
-    padding-top: 30px;
-    
-}
-#testimonies h2 {
-    font-family: 'Staatliches', cursive;
-}
-#testimonies p {
-    font-family: 'Montserrat', sans-serif;
-}
-#testimonies address {
-    font-family: 'Montserrat', 500;
-}
-  .quotes{
-    position: absolute;
-    top: -80px;
-    width: 160px;
-    height: 160px;
-}
+
 /* testimonies new carousel*/
 
 .coments{
@@ -598,6 +529,8 @@ input[type=radio] {
     margin-left: 70px;
     font-family: 'Staatliches', cursive;
     font-size: 38px;
+    text-align: center;
+    color: #004F4F;
 }
 .discount {
     text-align: center;
@@ -949,85 +882,6 @@ input[type=radio] {
 }
 
 /*services contanier
-#comtanier-six {
-    width: 100%;
-    height: 100%;
-}
-#flex-container-services {
-    width: 100%;
-    align-items: center;
-    background-color: #08b6b6;
-    padding-bottom: 100px;
-    background-image:url(../Assets/GearBackgroundc.png);
-    top: 0;
-}
-
-#flex-6-services {
-    width: 100;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-#flex-container-services h2 {
-    font-size: 38px;
-    padding-left: 30px;
-    padding-top: 30px;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-}
-.carde-services {
-    padding-bottom: 30px;
-    text-align: center;
-    width: 250px;
-    height: 420px;
-    box-sizing: border-box;
-    background-color: white;
-    margin:10px;
-    position: relative;
-    filter:drop-shadow(8px 8px 10px rgb(40, 65, 40));
-    border-radius: 12px;
-}
-.carde-services:hover {
-    transform: scale(1.07);
-    transition: 1s;
-}
-.st0-services
-{	position : absolute ;
-    top : 0;
-    right: 0;
-    left: 0;
-	width : 250px;
-}
-.images-services {
-    width: 100%;
-}
-.one-services {
-    width: 100%;
-    position: absolute;
-    font-size: 25px;
-    top: 180px;
-    color: #08b6b6;
-    padding-bottom: 30px;
-    font-family: 'Montserrat', sans-serif 300;
-}
-
-.two-services {
-    font-size: 18px;
-    position: relative;
-    top: 270px;
-    padding-left: 15px;
-    padding-right: 15px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.certifications {
-    padding: 10px;
-    margin-left: 50px;
-    font-size: 38px;
-}*/
-/**
-
 /* trying new flex containe */
 .justContainer {
     position: relative;
