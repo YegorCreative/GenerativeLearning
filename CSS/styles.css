@@ -671,7 +671,7 @@ input[type=radio] {
 /* About page CSS */
 
 #about-banner {
-    background-image: url('../Assets/photo1.png');
+    background-image: url('../Assets/brickWall.png');
     background-color: antiquewhite;
     height: 650px;
     display: flex;
@@ -686,16 +686,34 @@ input[type=radio] {
     position: relative;
     z-index: 0;
 }
-
+#about-banner img{
+    z-index: 3;
+    position: absolute;
+    bottom: 80px;
+    width: 60px;
+}
+.color11 {
+    width: 100%;
+    height: 100%;
+    background-color: #064f4f;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    opacity: .6;
+    z-index: 0;
+}
 
 #about-banner h3 {
     font-weight: 400;
     font-size: 110px;
-    color: #064f4f;
+    color: white;
     margin: 20px 0;
     font-family: 'Montserrat', sans-serif;
     z-index: 5;
 }
+
+
+
 #partners {
     position: relative;
     width: 100%;
@@ -725,15 +743,17 @@ input[type=radio] {
 .twoPigs{
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
     box-sizing: border-box;
+    margin-top: 30px;
 }
 .leftPig, .rightPig {
-    width: 50%;
-    height: 500px;
+    width: 320px;
     font-family: 'Montserrat', sans-serif;
 }
 .rightPig{
+    width: 740px;
     padding: 2em;
     background-color: #064f4f;
     color: white;
@@ -742,13 +762,10 @@ input[type=radio] {
     justify-content: center;
     align-items: center;
     font-size: 18px;
+    box-sizing: border-box;
 }
-.leftPig {
-    background-image: url(../Assets/jimGiraffes.png);
-    background-attachment:local; ;
-    background-size: cover;
-    background-position: left;
-    background-repeat: no-repeat;
+.leftPig img {
+    max-width: 720px;
 }
 
 .threePigs{
@@ -757,9 +774,14 @@ input[type=radio] {
     width: 100%;
     background-color: white;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin-top: 25px;
     padding-bottom: 30px;
+    background-image: url(../Assets/twoSides.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .threePigs h2 {
     font-family: 'Montserrat', sans-serif;
@@ -768,28 +790,26 @@ input[type=radio] {
     color: #064f4f;
 }
 .pig1{
-    min-width: 320px;
-    max-width: 380px;
-    width: 30%;
+    max-width: 440px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
+   padding: 30px;
+    
 }
 .pig1 p{
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
 }
 .pig2 {
-    width: 40%;
-    min-width: 320px;
-    max-width: 580px;
+    max-width: 640px;
+    width: 100%;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 30px;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
 }
