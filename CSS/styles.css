@@ -941,7 +941,15 @@ input[type=radio] {
     opacity: 0.4;
     z-index: 1;
 }
-
+.certifications{
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    color: #064f4f;
+}
+.certifications span {
+    font-size: 70px;
+}
 /*services contanier
 /* trying new flex containe */
 .justContainer {
@@ -954,8 +962,8 @@ input[type=radio] {
     align-items: center;
 }
  .card1 {
-     width:310px;
-     height: 500px;
+     width:250px;
+     height: 400px;
      display: flex;
      flex-direction: column;
      justify-content: flex-start;
@@ -970,11 +978,27 @@ input[type=radio] {
      text-align: center;
      width: 250px;
      font-family: 'Montserrat', sans-serif;
-     font-size: 18px;
+     font-size: 14px;
  }
  .content1 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
+    font-size: 14px;
+ }
+ .learnMore {
+     width: 170px;
+     box-sizing: border-box;
+     background-color: #064f4f;
+     padding: 7px;
+     color: white;
+     font-size: 14px;
+     text-decoration: none;
+     border-radius: 5px;
+ }
+ .learnMore:hover {
+     border: 2px solid #004F4F;
+     background-color: #F4F4F4;
+     color:#004F4F;
+     
  }
   /* books */ 
 #main-body {
