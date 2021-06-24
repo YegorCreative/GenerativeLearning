@@ -717,28 +717,23 @@ input[type=radio] {
 #partners {
     position: relative;
     width: 100%;
-    height: auto;
-    display: flex;
-    flex-flow: wrap row;
-    justify-content: space-around;
-    align-items: center;
+    box-sizing: border-box;
     background-color: white;
+    padding: 30px;
 }
 #partners h2{
     width: 100%;
-    margin-left: 30px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 38px;
+    font-size: 28px;
+    text-align: center;
 
 }
-.partner {
-    margin-top: 30px;
-    display: flex;
+#partners h1{
+    color: #004F4F;
+    text-align: center;
+    font-size: 48px;
 }
-.partner img {
-    width: 260px;
 
-}
 /* about jim */
 .twoPigs{
     width: 100%;
@@ -813,29 +808,59 @@ input[type=radio] {
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
 }
+
+/*Carousel Gallery*/
+.swiper-container {
+    width: 500px;
+    height: 300px;
+    position: relative;
+    padding-bottom: 200px;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 1px;
+    background: #fff;
+    /* Center slide text vertically */ 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 320px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 150px;
+    object-fit: cover;
+  }
+
+
+
+
+
+/*# Carousel Gallery*/
+
   
   .video-container {
-    background-image: url('../Assets/green-leaves.png');
-    background-color: antiquewhite;
-    height: 650px;
+   
+    background-color: white;
     display: flex;
     flex-wrap: nowrap;
-    top: 0;
+    margin-top: 0;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  
     position: relative;
     z-index: 0;
   }
   .video-container h2{
-      color:white;
+      color: #064f4f;;
       font-family: 'Montserrat', sans-serif;
       font-size: 38px;
       margin-left: 38px;
+      
   }
   .inside-part{
       width: 100%;
@@ -850,26 +875,32 @@ input[type=radio] {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 50%;
+    position: relative;
+    width: 40%;
     height: 100%;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
+    color: black;
+    padding: 25px;
+    margin: 5px;
     text-align: center;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 18px;
     font-family: 'Montserrat', sans-serif;
-    padding-bottom: 40px;
+  }
+  .right-float p, .left-float p{
+    border: solid 2px black;
+    box-sizing: border-box;
+    padding: 25px;
+    height: 300px;
   }
   
   .left-float img, .right-float img {
+      margin-top: -100px;
     filter: drop-shadow(3px 3px 10px rgb(243, 243, 243));
   }
 /* Services */
 
 #services-banner {
-    background-image: url('../Assets/services2.png');
-    height: 650px;
+    background-image: url('../Assets/chalkBoard.png');
+    height: 550px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -881,11 +912,21 @@ input[type=radio] {
     position: relative;
     z-index: 0;
 }
-#services-banner h3 {
+#services-banner h3{
     font-weight: 400;
-    font-size: 110px;
+    font-size: 50px;
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Staatliches', cursive;
+    z-index: 5;
+    text-align: center;
+    line-height: 10px;
+}
+#services-banner h1{
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 10px;
+    color: white;
+    font-family: 'Staatliches', cursive;
     z-index: 5;
     text-align: center;
 }
@@ -896,7 +937,7 @@ input[type=radio] {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: yellowgreen;
+    background-color: #064f4f;
     opacity: 0.4;
     z-index: 1;
 }
