@@ -503,11 +503,11 @@ input[type=radio] {
     transform: translatex(0) scale(1);
     opacity: 1;
     z-index: 1;
-    
-    img {
+  }
+    #item-1 img {
       box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
     }
-  }
+  
   
 
 #item-2:checked ~ .player #test {
@@ -1040,26 +1040,38 @@ input[type=radio] {
 }
 
 .blocks-top{
-    width: 100%;
+    width: 50%;
     box-sizing: border-box;
-    height: 150px;
+    height: 200px;
     background-color: #064f4f;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
 }
 
 .stripe {
-    width: 320px;
+    width: 50%;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    text-align: center;
     padding: 25px;
     color: white;
-    margin-top: 0;
+    height: 200px;
+    background-color: #064f4f;
+    
     font-size: 20px;
     line-height: 10px;
+}
+.justCenter{
+    width: 320px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
 .blocks-top img {
     height: 420px;
@@ -1067,23 +1079,31 @@ input[type=radio] {
 }
 
 .blocks-left {
-    background-color: #f0dbc2;
-    background-image:url(../Assets/quote.png);
+    background-image:url(../Assets/design24.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
     padding-left: 45px;
     padding-right: 45px;
     color: #064f4f;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    font-size: 20px;
+    padding: 30px;
+    font-size: 16px;
     font-family: 'Montserrat', sans-serif;
-    width:  95%;
-    height: 100%;
+    width:  100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: wrap column;
-    filter:drop-shadow(8px 8px 10px rgb(180, 180, 180));
+    align-items: flex-start;
+    flex-flow: wrap row;
    
+}
+.realLeft, .realRight {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: first baseline;
+    align-items: flex-start;
+    margin-top: 0;
 }
 .blocks-right img {
     width: 250px;
@@ -1115,20 +1135,26 @@ input[type=radio] {
     transition: 1s;
 }
 #three-authors {
-    padding-top: 30px;
+    padding: 30px;
     width: 100%;
     display: flex;
     flex-flow: wrap row;
-    justify-content:space-evenly;
+    justify-content:space-around;
     text-align: center;
-    font-size: 20px;
-
+    font-size: 18px;
+    margin-top: 90px;
+    box-sizing: border-box;
 }
 #three-authors img{
-width: 150px;
+width: 160px;
 border-radius: 50%;
 background-size: contain;
 background-position: center;
+}
+.headerThree {
+    width: 100%;
+    text-align: center;
+   
 }
 /* contuct us*/
 #contact-banner {
