@@ -99,8 +99,9 @@
 
 .over {
     text-decoration: line-through;
-    color: red;
+    color: orange;
     font-family: 'Montserrat', sans-serif;
+    line-height: 7px;
 }
 .Matt {
     margin-top:0;
