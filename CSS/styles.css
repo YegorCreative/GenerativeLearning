@@ -977,7 +977,7 @@ input[type=radio] {
      text-align: center;
      width: 250px;
      font-family: 'Montserrat', sans-serif;
-     font-size: 14px;
+     font-size: 12px;
  }
  .content1 {
     font-family: 'Montserrat', sans-serif;
@@ -1158,29 +1158,30 @@ background-position: center;
 }
 /* contuct us*/
 #contact-banner {
-    background-image: url('../Assets/phonecontactclean2.png');
-    height: 1350px;
+    background-image: url('../Assets/contactMountain.png');
+    width: 100%;
+    height: 800px;
     display: flex;
+    box-sizing: border-box;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     background-attachment: fixed;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
     z-index: 0;
     top: 0;
-    background-color: #08b6b6;
 }
 
 
 #contact-banner h3 {
     font-weight: 400;
     font-size: 110px;
-    color: #d4d857;
+    color: white;
     margin: 20px 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Staatliches', cursive;
     font-size: 110px;
     z-index: 5;
 }
@@ -1197,7 +1198,7 @@ background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #d4d857;
+    background-color: white;
     width: 315px;
     height: 60px;
     margin-left: 30px;
