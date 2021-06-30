@@ -75,9 +75,8 @@
     .growYour {
       flex-wrap: wrap-reverse;
     }
-    .growLeft, .growRight{
-      width: 440px;
-    }
+   
+
    
   }
 
@@ -148,25 +147,18 @@
       }
       #about-banner{
         height: 400px;
-        background-image: url('../Assets/photo1-1024px.png');
         background-attachment: scroll;
       }
       
-      .video-container {
-        background-image: url('../Assets/green-leaves-1024.png');
-        background-attachment: scroll;
-      }
       #second-banner h3{
         font-size: 80px;
       }
       #services-banner{
         height: 400px;
-        background-image: url('../Assets/services2-1024.png');
         background-attachment: scroll;
       }
       #books-banner {
         height: 400px;
-        background-image: url('../Assets/books-1024.png');
         background-attachment: scroll;
       }
       #contact-banner {

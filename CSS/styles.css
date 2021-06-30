@@ -287,6 +287,10 @@ x
     width: 640px;
     box-sizing: border-box;   
 }
+.growImage{
+    width: 100%;
+    height: 100%;
+}
 .blanky {
     width: 640px;
     height: 320px;
