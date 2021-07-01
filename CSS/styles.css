@@ -130,7 +130,6 @@ body {
     font-family: 'Montserrat', sans-serif;  
     background-color: #004F4F;
 }
-x   
 #two-blocks {
     display: flex;
     height: 550px;
@@ -140,7 +139,6 @@ x
     box-sizing: border-box;
     text-align: center;
     width: 50%;
-    height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: center;

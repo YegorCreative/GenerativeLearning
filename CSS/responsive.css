@@ -132,10 +132,18 @@
       #second-two-block{
         width: 100%;
         height: auto;
+        flex-direction: column;
+        padding-bottom: 30px;
       }
       .imgB img{
         width: 350px;
         height: 350px;
+      }
+      .imB, .two-blocks-info {
+        width: 100%;
+        height: auto;
+        padding-left: 60px;
+        padding-right: 60px;
       }
       
       #second-banner{
@@ -193,6 +201,10 @@
       height: auto;
     padding-bottom: 40px ;
      }
+     .card {
+       width: 320px;
+       height: 360px;
+     }
   }
     @media screen and (max-width: 1020px){
       #app {
@@ -229,13 +241,15 @@
       .two-blocks-info, .imgB{
         width: 100%;
         height: auto;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        
       }
       .imgB img{
-        margin-top: 30px;
         width: 300px;
         height: 300px;
+        padding-bottom: 15px;
+      }
+      .two-blocks-info p{
+        padding: 20px;
       }
       #about-banner h3{
         font-size: 80px;
@@ -316,22 +330,22 @@
   @media screen and (max-width: 768px) {
     #second-banner  {
       background-attachment: scroll;
-      background-image: url('../Assets/banner1-768px.png');
+     
     }
     #about-banner  {
       background-attachment: scroll;
-      background-image: url('../Assets/photo1-768px.png');
+     
     }
     .video-container {
-      background-image: url('../Assets/green-leaves-768.png');
+      
     }
     #services-banner {
       background-attachment: scroll;
-      background-image: url('../Assets/services2-768.png');
+      
     }
     #books-banner  {
       background-attachment: scroll;
-      background-image: url('../Assets/books-768.png');
+      
     }
     #contact-banner  {
       background-attachment: scroll;
@@ -358,6 +372,70 @@
     filter:drop-shadow(2px 2px 4px rgb(180, 180, 180));
   }
   }
+   /*screen max-width 696*/
+   @media screen and (max-width: 695px){
+   .cards{
+     width: 100%;
+   }
+    .card{
+       width: 320px;
+       height: 350px;
+     }
+     #item-1:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2 {
+      transform: translatex(-35%) scale(.8);
+    }
+    
+    #item-1:checked ~ .cards #song-2, #item-2:checked ~ .cards #song-3, #item-3:checked ~ .cards #song-1 {
+      transform: translatex(35%) scale(.8);
+    }
+    
+    #item-1:checked ~ .cards #song-1, #item-2:checked ~ .cards #song-2, #item-3:checked ~ .cards #song-3 {
+      transform: translatex(0) scale(1);
+    }
+      #item-1 img {
+        box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+      }
+     #item-2:checked ~ .player #test {
+      transform: translateY(0);
+    }
+    
+    #item-2:checked ~ .player #test  {
+      transform: translateY(-20px);
+    }
+    
+    #item-3:checked ~ .player #test  {
+      transform: translateY(-30px);
+    }
+    .blanky, .blanky1 {
+      width: 450px;
+      box-sizing: border-box;
+      align-items: center;
+      margin: 0 auto;
+    }
+     .growSmallLeft{
+       flex-direction: column;
+     }
+     .growSmallRight {
+       flex-direction: column;
+     }
+     .reversed {
+       flex-direction: column-reverse;
+     }
+     .growOne, .growTwo, .growColor {
+       width:450px;
+       height: 450px;
+       margin: 0 auto;
+     }
+     .growImgae {
+       width: 320px;
+     }
+     .growOne{
+       justify-content: center;
+       align-items: center;
+       text-align: left;
+     }
+   }
+
      /*screen max-width 618*/
      @media screen and (max-width: 618px){
       #second-banner h4 {
