@@ -321,9 +321,13 @@
       .leftPig, .rightPig {
         width: 100%;
         font-size: 20px;
+        margin: 0 auto;
       }
       .rightPig{
         height: auto;
+      }
+      .leftPig img{
+        width: 100%;
       }
       
     }
@@ -442,6 +446,17 @@
        align-items: center;
        text-align: left;
      }
+     .swiper-container {
+      width: 320px;
+      height: 300px;
+    
+      padding-bottom: 160px;
+    }
+    .swiper-slide img {
+      display: block;
+      width: 100px;
+      object-fit: cover;
+    }
    }
 
      /*screen max-width 618*/
