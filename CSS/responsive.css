@@ -308,7 +308,23 @@
       margin-top: 0;
       background-size: cover;
     }
+    #card {
+      height: auto;
+      padding-bottom: 20px;
     }
+    .card1{
+      margin: 5px;
+    }
+    .blocks-top, .stripe{
+      width: 100%;
+    }
+    .blocks-top img {
+      z-index: 5;
+    }
+    .realLeft, .realRight {
+      width: 100%;
+    }
+  }
     /*screen max-width 830*/
     @media screen and (max-width:830px){
       #two-blocks {
@@ -328,6 +344,12 @@
       }
       .leftPig img{
         width: 100%;
+      }
+      #services-banner h3{
+        font-size: 40px;
+      }
+      #services-banner h1{
+        font-size: 55px;
       }
       
     }
@@ -376,6 +398,21 @@
     padding-right: 15px;
     filter:drop-shadow(2px 2px 4px rgb(180, 180, 180));
   }
+  .twoPigs{
+    justify-content: center;
+  }
+  .leftPig{
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+  
+}
+.leftPig img {
+  min-width: 320px;
+  width: 100%;
+}
   }
    /*screen max-width 696*/
    @media screen and (max-width: 695px){
@@ -456,6 +493,12 @@
       display: block;
       width: 100px;
       object-fit: cover;
+    }
+    .stripe, .blocks-top{
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+      height: 320px;
     }
    }
 
@@ -621,6 +664,16 @@
         text-align: center;
         font-size: 18px;
       }
+      .stripe, .blocks-top{
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        height: 310px;
+      }
+      .blocks-top img {
+        margin-top: -180px;
+      }
+  
 
      }
 
