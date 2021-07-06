@@ -317,9 +317,13 @@
     }
     .blocks-top, .stripe{
       width: 100%;
+      justify-content: center;
+      align-items: center;
     }
     .blocks-top img {
       z-index: 5;
+      width: 320px;
+      height: auto;
     }
     .realLeft, .realRight {
       width: 100%;
