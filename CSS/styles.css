@@ -757,17 +757,17 @@ input[type=radio] {
 .twoPigs{
     width: 100%;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     box-sizing: border-box;
     margin-top: 30px;
+    justify-content: center;
 }
 .leftPig, .rightPig {
-    width: 320px;
+    width: 50%;
     font-family: 'Montserrat', sans-serif;
 }
 .rightPig{
-    width: 740px;
+    width: 640px;
     padding: 2em;
     background-color: #064f4f;
     color: white;
@@ -777,11 +777,13 @@ input[type=radio] {
     align-items: center;
     font-size: 18px;
     box-sizing: border-box;
+    margin-left: -100px;
+}
+.leftPig {
+    padding-left: 60px;
 }
 .leftPig img {
-    width: 100%;
-    max-width: 720px;
-    
+    width:100%;
 }
 
 .threePigs{
