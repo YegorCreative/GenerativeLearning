@@ -880,8 +880,8 @@ input[type=radio] {
   }
   .video-container h2{
       color: #064f4f;;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 38px;
+      font-family: 'Staatliches', cursive;
+      font-size: 50px;
       margin-left: 38px;
       
   }
@@ -935,14 +935,14 @@ input[type=radio] {
     position: relative;
     z-index: 0;
 }
-#services-banner h3{
+#services-banner h2{
     font-weight: 400;
     font-size: 50px;
     color: white;
     font-family: 'Staatliches', cursive;
     z-index: 5;
     text-align: center;
-    line-height: 10px;
+    line-height: 1px;
 }
 #services-banner h1{
     font-weight: 400;
@@ -952,6 +952,7 @@ input[type=radio] {
     font-family: 'Staatliches', cursive;
     z-index: 5;
     text-align: center;
+    line-height: 2px;
 }
 .color12{
     top: 0;
