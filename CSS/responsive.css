@@ -177,9 +177,7 @@
     .media-container {
       flex-wrap: wrap;
     }
-    #app {
-      height:800px;
-    }
+  
     #fourth-banner {
      height: 400px;
     }
@@ -201,10 +199,24 @@
       height: auto;
     padding-bottom: 40px ;
      }
-     .card {
-       width: 320px;
-       height: 360px;
-     }
+    
+     .coments {
+      height: 400px;
+    }
+    .containerA{
+      width: 100%;
+      height: 100%;
+    }
+    .card {
+      width: 320px;
+      height: 360px;
+    }
+     .threeDots{
+      margin-top: 0px;
+    }
+    .left-float, .right-float {
+      width: 100% ;
+    }
   }
     @media screen and (max-width: 1020px){
       #app {
@@ -227,6 +239,25 @@
       .two-blocks-about {
         padding-top: 30px;
         padding-bottom: 30px;
+      }
+      .twoPigs {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .leftPig, .rightPig {
+        width: 100%;
+        font-size: 20px;
+        margin: 0 auto;
+      }
+      .rightPig{
+        height: auto;
+      }
+      .leftPig img{
+        width: 100%;
+        padding: 30px;
+      }
+      .leftPig {
+        padding: 0;
       }
     }
     /*screen max-width 940*/
@@ -286,16 +317,14 @@
       height: auto;
       flex-wrap: wrap;
     }
-    .left-float, .right-float {
-      width: 100% ;
-    }
+   
     #second-banner h4 {
       font-size: 2rem;
     }
     #about-banner h3 {
       font-size: 60px;
     }
-    #services-banner h3{
+    #services-banner h2{
       font-size: 60px;
     }
     #books-banner h3 {
@@ -320,6 +349,9 @@
       justify-content: center;
       align-items: center;
     }
+    .blocks-top{
+      height: 120px;
+    }
     .blocks-top img {
       z-index: 5;
       width: 320px;
@@ -328,29 +360,23 @@
     .realLeft, .realRight {
       width: 100%;
     }
+    #three-authors{
+      margin-top: 15px;
+    }
+    .realLeft, .realRight{
+      padding: 10px;
+      font-size: 15px;
+    }
   }
     /*screen max-width 830*/
     @media screen and (max-width:830px){
       #two-blocks {
         flex-direction: column-reverse;
         height: auto;
-      }
-      .twoPigs {
-        flex-wrap: wrap;
-      }
-      .leftPig, .rightPig {
-        width: 100%;
-        font-size: 20px;
-        margin: 0 auto;
-      }
-      .rightPig{
-        height: auto;
-      }
-      .leftPig img{
-        width: 100%;
-      }
-      #services-banner h3{
+      } 
+      #services-banner h2{
         font-size: 40px;
+        line-height: inherit;
       }
       #services-banner h1{
         font-size: 55px;
@@ -393,8 +419,10 @@
     .certifications {
       padding: 10px;
       margin-left: 10px;
-      font-size: 28px;
+      font-size: 35px;
       text-align: center;
+  } .certifications span {
+    font-size: 50px;
   }
   .blocks-left {
     font-size: 18px;
@@ -420,6 +448,13 @@
   }
    /*screen max-width 696*/
    @media screen and (max-width: 695px){
+    #services-banner h2{
+      font-size: 35px;
+      line-height: inherit;
+    }
+    #services-banner h1{
+      font-size: 45px;
+    }
    .cards{
      width: 100%;
    }
@@ -433,6 +468,9 @@
      .containerA{
        width: 100%;
        height: 100%;
+     }
+     .threeDots{
+       margin-top: 40px;
      }
      #item-1:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2 {
       transform: translatex(-35%) scale(.8);
@@ -501,8 +539,14 @@
     .stripe, .blocks-top{
       justify-content: center;
       align-items: center;
-      padding: 30px;
-      height: 320px;
+      padding: 20px;
+      
+    }
+    .stripe{
+      height: 220px;
+    }
+    .blocks-top{
+      height: 120px;
     }
    }
 
@@ -517,7 +561,7 @@
       #about-banner h3 {
         font-size: 45px;
       }
-      #services-banner h3{
+      #services-banner h2{
         font-size: 35px;
       }
       #services-banner h1{
@@ -598,11 +642,20 @@
   .pig1 {
     width: 100%;
   }
+  #three-authors div{
+    margin: 15px;
+  }
      }
 
      /*screen max-width 520*/
      @media screen and (max-width: 520px){
-     
+      #services-banner h2{
+        font-size: 25px;
+        line-height: inherit;
+      }
+      #services-banner h1{
+        font-size: 35px;
+      }
       .imgB img{
         width: 250px;
         height: 250px;
@@ -672,10 +725,9 @@
         justify-content: center;
         align-items: center;
         padding: 10px;
-        height: 310px;
       }
-      .blocks-top img {
-        margin-top: -180px;
+      .stripe{
+        height: 240px;
       }
   
 
@@ -698,9 +750,7 @@
       height: 300px;
       
     }
-    .video-container {
-     
-    }
+    
     #services-banner{
       height: 300px;
       
@@ -730,8 +780,11 @@
     .certifications {
       padding: 10px;
       margin-left: 10px;
-      font-size: 22px;
+      font-size: 35px;
       text-align: center;
+  }
+  .certifications span {
+    font-size: 50px;
   }
     .imgB img{
       width: 230px;

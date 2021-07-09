@@ -903,19 +903,21 @@ input[type=radio] {
     flex-direction: column;
     position: relative;
     width: 40%;
-    height: 100%;
+    height: 500px;
     color: black;
     padding: 25px;
     margin: 5px;
     text-align: center;
     font-size: 18px;
     font-family: 'Montserrat', sans-serif;
+    
   }
   .right-float p, .left-float p{
     border: solid 2px black;
     box-sizing: border-box;
     padding: 25px;
-    height: 300px;
+    padding-bottom: 100px;
+    height: 100%;
   }
   
   .left-float img, .right-float img {
@@ -973,6 +975,7 @@ input[type=radio] {
     text-align: center;
     font-size: 50px;
     color: #064f4f;
+    margin-top: -40px;
 }
 .certifications span {
     font-size: 70px;
