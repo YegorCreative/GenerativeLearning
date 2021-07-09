@@ -644,6 +644,10 @@
   }
   #three-authors div{
     margin: 15px;
+
+  }
+  .arrowDown{
+    bottom: 15px;
   }
      }
 
@@ -791,7 +795,7 @@
       height: 230px;
     }
     #about-banner h3 {
-      font-size: 28px;
+      font-size: 35px;
     }
     .video-container h2{
       margin-left: 0;
