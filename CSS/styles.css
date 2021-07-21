@@ -1202,6 +1202,9 @@ background-position: center;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
 }
+.youtubeVideo iframe {
+    padding: 20px;
+}
 /* contuct us*/
 #contact-banner {
     background-image: url('../Assets/contactMountain.png');
