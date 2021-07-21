@@ -381,7 +381,10 @@
       #services-banner h1{
         font-size: 55px;
       }
-      
+      .youtuBe{
+        width: 90%;
+        padding: 12px;
+      }
     }
      /*screen max-width 768*/
   @media screen and (max-width: 768px) {
