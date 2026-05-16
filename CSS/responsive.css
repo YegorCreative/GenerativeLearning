@@ -449,6 +449,17 @@
   min-width: 320px;
   width: 100%;
 }
+  .youtubeVideo iframe {
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    box-sizing: border-box;
+  }
+  .growYour {
+    padding-bottom: 60px;
+    margin-top: 0;
+  }
   }
    /*screen max-width 696*/
    @media screen and (max-width: 695px){
@@ -533,7 +544,7 @@
       width: 320px;
       height: 300px;
     
-      padding-bottom: 160px;
+      padding-bottom: 40px;
     }
     .swiper-slide img {
       display: block;
@@ -606,6 +617,8 @@
     .socialM{
       width: 320px;
       padding-left: 20px;
+      padding-right: 60px;
+      box-sizing: border-box;
     }
     #testimonies div{
       width: 100%;
