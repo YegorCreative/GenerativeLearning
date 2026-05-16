@@ -115,6 +115,11 @@ body {
 .main-menu-list li a:active {
     color: #2efafa;
 }
+.main-menu-list li a.active,
+.overlay-content a.active {
+    color: #969c07;
+    font-weight: 700;
+}
 /*test menu*/
 
 
