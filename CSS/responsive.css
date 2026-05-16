@@ -421,7 +421,8 @@
     }
     .certifications {
       padding: 10px;
-      margin-left: 10px;
+      padding-left: 10px;
+      box-sizing: border-box;
       font-size: 35px;
       text-align: center;
   } .certifications span {
@@ -786,7 +787,8 @@
     }
     .certifications {
       padding: 10px;
-      margin-left: 10px;
+      padding-left: 10px;
+      box-sizing: border-box;
       font-size: 35px;
       text-align: center;
   }
