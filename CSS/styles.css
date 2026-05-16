@@ -1278,3 +1278,83 @@ background-position: center;
 .contact-buttons i {
     padding-left: 15px;
 }
+
+/* reflection section */
+.reflection-section {
+    background-color: white;
+    background-image: url(../Assets/design2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 75vh;
+    padding: 60px 20px;
+    box-sizing: border-box;
+}
+.reflection-card {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+    border-radius: 8px;
+    max-width: 680px;
+    width: 100%;
+    padding: 48px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.reflection-label {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #969c07;
+    margin-bottom: 20px;
+}
+.reflection-quote {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(16px, 2.4vw, 22px);
+    font-weight: 600;
+    line-height: 1.6;
+    color: #1a1a1a;
+    margin: 0 0 32px;
+}
+.reflection-button {
+    background-color: #969c07;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 28px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+}
+.reflection-button:hover {
+    background-color: #d4d857;
+    color: #1a1a1a;
+}
+.reflection-answer {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #444444;
+    margin: 24px 0 0;
+    display: none;
+}
+.reflection-answer.active {
+    display: block;
+}
+@media screen and (max-width: 768px) {
+    .reflection-card {
+        padding: 36px 24px;
+    }
+    .reflection-quote {
+        font-size: 16px;
+    }
+}

@@ -24,3 +24,16 @@ function closeNav() {
 $('input').on('change', function() {
   $('body').toggleClass('blue');
 });
+
+/* reflection toggle */
+document.addEventListener('DOMContentLoaded', function () {
+    var reflectionBtn = document.querySelector('.reflection-button');
+    if (reflectionBtn) {
+        reflectionBtn.addEventListener('click', function () {
+            var answer = document.querySelector('.reflection-answer');
+            if (answer) {
+                answer.classList.toggle('active');
+            }
+        });
+    }
+});
